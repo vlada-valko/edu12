@@ -10,9 +10,7 @@ on:
 
       - jenk
 
-  workflow_dispatch:
-
-  
+  workflow_dispatch:  
 
 jobs:
 
@@ -20,11 +18,7 @@ jobs:
 
     runs-on: ubuntu-latest
 
- 
-
-    steps:
-
-    
+    steps: 
 
     - name: Set up JDK 17
 
@@ -36,13 +30,9 @@ jobs:
 
         distribution: 'zulu'
 
- 
-
     - name: Show Java version
 
       run: "java -version"
-
- 
 
     - name: Checkout code
 
@@ -52,25 +42,17 @@ jobs:
 
         ref: jenk
 
- 
-
     - name: Show directory
 
       run: 'pwd'
-
  
-
     - name: List files
 
       run: 'ls -al'
 
- 
-
     - name: Install Dependencies
 
-      run: 'mvn compile'
-
- 
+      run: 'mvn compile' 
 
     - name: Build application
 
